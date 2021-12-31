@@ -1,23 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState, createContext } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NavBar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
+import "./styles/App.css";
+export const UserContext = createContext();
 
 function App() {
+  const [userSignupInformation, setUserSignupInformation] = useState({
+    username: "",
+    email: "",
+    password: "",
+    repeatPassword: "",
+  });
+
+  const [userLoginInformation, setUserLoginInformation] = useState({
+    loginEmail: "",
+    loginPassword: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [logged, setLogged] = useState(false);
+  useEffect(() => {
+    setLogged(JSON.parse(localStorage.getItem("isLoggedIn")));
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <Router>
+        <UserContext.Provider
+          value={{
+            logged,
+            setLogged,
+            userLoginInformation,
+            setUserLoginInformation,
+            userSignupInformation,
+            setUserSignupInformation,
+            submitted,
+            setSubmitted,
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <NavBar isLoggedIn={logged} />
+          <ScrollToTop />
+          <Switch>
+            <Route exact path="/"></Route>
+          </Switch>
+        </UserContext.Provider>
+      </Router>
     </div>
   );
 }

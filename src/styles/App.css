@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --black: #111111;
+  --white: #f8f8ff;
+  --DarkBlue: #003580;
+  --LightBlue: #005999;
+}
