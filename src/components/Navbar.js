@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
-function NavBar() {
+function NavBar({ isLoggedIn }) {
   const [toggleNav, setToggleNav] = useState(false);
-  let isLoggedIn = false;
   let obj = toggleNav
     ? { display: "flex", flexDirection: "column", alignItems: "self-start" }
     : {};

@@ -1,7 +1,9 @@
 import React, { useEffect, useState, createContext } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./components/footer";
 import NavBar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
 import "./styles/App.css";
 export const UserContext = createContext();
 
@@ -40,8 +42,11 @@ function App() {
           <NavBar isLoggedIn={logged} />
           <ScrollToTop />
           <Switch>
-            <Route exact path="/"></Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
           </Switch>
+          <Footer />
         </UserContext.Provider>
       </Router>
     </div>
