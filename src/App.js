@@ -2,6 +2,7 @@ import React, { useEffect, useState, createContext } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./components/footer";
 import NavBar from "./components/Navbar";
+import Registration from "./pages/Registration";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import "./styles/App.css";
@@ -44,6 +45,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/login">
+              <Registration />
             </Route>
           </Switch>
           <Footer />
