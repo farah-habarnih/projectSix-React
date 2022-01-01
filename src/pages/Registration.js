@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Login from "../components/login";
 import Signup from "../components/Signup";
 import { UserContext } from "../App";
@@ -15,6 +15,10 @@ function Registration() {
     submitted,
     setSubmitted,
   } = useContext(UserContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [login_register, setlogin_register] = useState(false);
   return (

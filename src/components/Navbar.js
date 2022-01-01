@@ -31,7 +31,7 @@ function NavBar({ isLoggedIn }) {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/findApartment">Find Apartment </Link>
+            <Link to="/findFarm">Find Farm </Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
@@ -46,7 +46,7 @@ function NavBar({ isLoggedIn }) {
         ) : (
           <ul>
             <li>
-              <Link to="/account">My Account</Link>
+              <Link to="/Account">My Account</Link>
             </li>
           </ul>
         )}
