@@ -6,6 +6,7 @@ import Registration from "./pages/Registration";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import "./styles/App.css";
+import Error from "./components/error";
 export const UserContext = createContext();
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Registration />
+            </Route>
+            <Route path="*">
+              <Error />
             </Route>
           </Switch>
           <Footer />

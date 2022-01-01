@@ -48,7 +48,6 @@ function Login(props) {
           username: checkUser[0].username,
           id: checkUser[0].id,
           password: checkUser[0].password,
-          img: checkUser[0].img,
         })
       );
       history.push("/findApartment");

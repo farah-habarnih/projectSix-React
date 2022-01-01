@@ -1,0 +1,29 @@
+.error-div {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.error-div img {
+  height: 50%;
+  width: 30%;
+}
+
+.error-div h1,
+.error-div p {
+  margin: 1rem;
+}
+
+.btn-back {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--white);
+  background-color: #ff385c;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+.btn-back:hover {
+  background-color: var(--LightBlue);
+}
