@@ -32,7 +32,7 @@
 .navMainContainer .pagesLinks * {
   text-decoration: none;
   list-style: none;
-  color: var(--teal);
+  color: var(--white);
 }
 .navMainContainer .pagesLinks *:hover {
   color: var(--navyBlue);

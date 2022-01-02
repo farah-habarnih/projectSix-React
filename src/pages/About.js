@@ -1,10 +1,9 @@
-import React from "react";
-import "../styles/home.css";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import HomePageGrid from "../components/HomePageGrid";
+import React, { useEffect } from "react";
 import Testimonial from "../components/Testimonial";
-function Home() {
+import { Link } from "react-router-dom";
+import "../styles/about.css";
+
+function About() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -65,18 +64,9 @@ function Home() {
           </div>
         </div>
       </div>
-      <h2 className="image-heading">
-        Popular <span>Farms</span>
-      </h2>
-      <HomePageGrid />
-      <div className="btn-container">
-        <Link to="/findFarm">
-          <button className="btn-discover">Discover More</button>
-        </Link>
-      </div>
       <Testimonial />
     </div>
   );
 }
 
-export default Home;
+export default About;

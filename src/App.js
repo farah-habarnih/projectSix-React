@@ -7,6 +7,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import "./styles/App.css";
 import Error from "./components/error";
+import About from "./pages/About";
 export const UserContext = createContext();
 
 function App() {
@@ -49,6 +50,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Registration />
+            </Route>
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="*">
               <Error />
