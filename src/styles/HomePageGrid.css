@@ -1,0 +1,9 @@
+.image-grid {
+  display: grid;
+  padding: 3rem;
+  grid-template-areas: "img-1 img-2 img-2";
+}
+/* .image-grid img {
+  width: 10vw;
+  height: 10vh;
+} */

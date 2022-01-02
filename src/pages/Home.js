@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/home.css";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import HomePageGrid from "../components/HomePageGrid";
+import Testimonial from "../components/Testimonial";
 function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,6 +31,7 @@ function Home() {
             <img
               className="Pros-image"
               src="https://code-theme.com/html/findhouses/images/icons/icon-4.svg"
+              alt="Pros"
             ></img>
             <h3>Wide Range Of Properties</h3>
             <p>
@@ -40,6 +43,7 @@ function Home() {
             <img
               className="Pros-image"
               src="https://code-theme.com/html/findhouses/images/icons/icon-4.svg"
+              alt="Pros"
             ></img>
             <h3>Wide Range Of Properties</h3>
             <p>
@@ -51,6 +55,7 @@ function Home() {
             <img
               className="Pros-image"
               src="https://code-theme.com/html/findhouses/images/icons/icon-4.svg"
+              alt="Pros"
             ></img>
             <h3>Wide Range Of Properties</h3>
             <p>
@@ -60,6 +65,8 @@ function Home() {
           </div>
         </div>
       </div>
+      <HomePageGrid />
+      <Testimonial />
     </div>
   );
 }
