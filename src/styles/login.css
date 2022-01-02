@@ -35,7 +35,7 @@ label {
 
 .login-btn {
   margin: 1em auto;
-  background-color: var(--LightBlue);
+  background-color: rgb(255, 56, 92);
   padding: 0.375rem 0.75rem;
   color: var(--white);
   cursor: pointer;
@@ -50,6 +50,7 @@ label {
   transform: scale(1.1);
   transition: 0.3s;
   outline: none;
+  background-color: var(--DarkBlue);
 }
 .Signup-link {
   cursor: pointer;

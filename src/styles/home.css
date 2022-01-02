@@ -34,7 +34,7 @@
   padding: 7px 0;
 }
 .heroImageContainer .actionArea button {
-  background-color: var(--DarkBlue);
+  background-color: #ff385c;
   padding: 0.7rem;
   border-radius: 5px;
   border: none;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 .heroImageContainer .actionArea button:hover {
-  background-color: var(--LightBlue);
+  background-color: var(--DarkBlue);
   padding: 0.7rem;
   border-radius: 5px;
   border: none;
@@ -97,10 +97,13 @@
   flex-direction: column;
   background-color: white;
   padding: 1rem;
-
   width: 25vw;
   height: 40vh;
   justify-content: space-around;
+  transition: all 0.2s ease;
+}
+.Pros-single-box:hover {
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.3);
 }
 .Pros-image {
   max-width: 10wh;

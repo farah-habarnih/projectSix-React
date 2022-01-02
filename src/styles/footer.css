@@ -58,13 +58,22 @@ div.footerColsContainer > div:nth-child(1) > div.footerSiteDesc {
   height: 100%;
 }
 .footerColLinks .fa-facebook-square {
-  color: var(--white);
+  color: rgb(255, 56, 92);
 }
 .footerColLinks .fa-instagram-square {
-  color: var(--white);
+  color: rgb(255, 56, 92);
 }
 .footerColLinks .fa-twitter-square {
-  color: var(--white);
+  color: rgb(255, 56, 92);
+}
+.footerColLinks .fa-facebook-square:hover {
+  opacity: 0.8;
+}
+.footerColLinks .fa-instagram-square:hover {
+  opacity: 0.8;
+}
+.footerColLinks .fa-twitter-square:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 768px) {
   .footerMainContainer > .footerColsContainer {
