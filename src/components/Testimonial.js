@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import data from "./data";
 import "../styles/Testimonial.css";
+
 function Testimonial() {
-  const [people, setPeople] = useState(data);
+  const [people] = useState(data);
   const [index, setIndex] = React.useState(0);
 
   useEffect(() => {

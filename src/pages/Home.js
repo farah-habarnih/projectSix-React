@@ -42,10 +42,10 @@ function Home() {
           <div className="Pros-single-box">
             <img
               className="Pros-image"
-              src="https://code-theme.com/html/findhouses/images/icons/icon-4.svg"
+              src="https://code-theme.com/html/findhouses/images/icons/icon-5.svg"
               alt="Pros"
             ></img>
-            <h3>Wide Range Of Properties</h3>
+            <h3>Trusted by thousands</h3>
             <p>
               lorem ipsum dolor sit amet, consectetur pro adipisici consectetur
               debits adipisicing lacus consectetur Business Directory.
@@ -54,10 +54,10 @@ function Home() {
           <div className="Pros-single-box">
             <img
               className="Pros-image"
-              src="https://code-theme.com/html/findhouses/images/icons/icon-4.svg"
+              src="https://code-theme.com/html/findhouses/images/icons/icon-6.svg"
               alt="Pros"
             ></img>
-            <h3>Wide Range Of Properties</h3>
+            <h3>Financing made easy</h3>
             <p>
               lorem ipsum dolor sit amet, consectetur pro adipisici consectetur
               debits adipisicing lacus consectetur Business Directory.
@@ -65,7 +65,15 @@ function Home() {
           </div>
         </div>
       </div>
+      <h2 className="image-heading">
+        Popular <span>Farms</span>
+      </h2>
       <HomePageGrid />
+      <div className="btn-container">
+        <Link to="/findFarm">
+          <button className="btn-discover">Discover More</button>
+        </Link>
+      </div>
       <Testimonial />
     </div>
   );

@@ -1,9 +1,68 @@
 .image-grid {
   display: grid;
   padding: 3rem;
-  grid-template-areas: "img-1 img-2 img-2";
+  margin: 0.5rem 3rem;
+  height: 100vh;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "img-1 img-2 img-2"
+    "img-1 img-3 img-4";
 }
-/* .image-grid img {
-  width: 10vw;
-  height: 10vh;
-} */
+
+.img-1 {
+  grid-area: img-1;
+  background-image: url("https://tashatgo.com/wp-content/uploads/2021/02/4-96.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover {
+  opacity: 0.7;
+  transition: 0.5s ease;
+}
+.img-2 {
+  grid-area: img-2;
+  background-image: url("https://go-assets.devops.arabiaweather.com/2021-05/178910035_138157714989549_7340906964183843806_nf.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url("https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url("https://tajircom.fra1.digitaloceanspaces.com/photos/1727642613/previews/preview_2.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .image-grid {
+    height: 150vh;
+    grid-gap: 1rem;
+    margin: 1rem;
+    grid-template-areas:
+      "img-1"
+      "img-2"
+      "img-3"
+      "img-4";
+  }
+}

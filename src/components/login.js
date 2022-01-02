@@ -50,7 +50,7 @@ function Login(props) {
           password: checkUser[0].password,
         })
       );
-      history.push("/findApartment");
+      history.push("/findFarm");
     } else {
       //   Swal.fire({
       //     icon: "error",

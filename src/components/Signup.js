@@ -24,7 +24,7 @@ function Signup(props) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { email, username, password, repeatPassword, img } = e.target;
+    const { email, username, password, repeatPassword } = e.target;
     let data = {
       id: Math.random() * 100,
       username: username.value,
@@ -59,7 +59,7 @@ function Signup(props) {
       );
       setSubmitted(true);
       setLogged(true);
-      history.push("/findApartment");
+      history.push("/findFarm");
     }
   };
 
