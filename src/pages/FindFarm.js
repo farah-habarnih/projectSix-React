@@ -1,6 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
 import "../styles/findFarm.css";
-// import BookingCardInfo from "../components/BookingCardInfo";
 import { Link } from "react-router-dom";
 import FarmCardInfo from "../components/FarmCardInfo";
 export const BookingContext = createContext();

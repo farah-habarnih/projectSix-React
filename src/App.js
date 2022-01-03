@@ -9,6 +9,8 @@ import "./styles/App.css";
 import Error from "./components/error";
 import About from "./pages/About";
 import FindFarm from "./pages/FindFarm";
+import Farms from "./components/Farms";
+import BookingForm from "./pages/BookingForm";
 export const UserContext = createContext();
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [logged, setLogged] = useState(false);
+  const [farms, setFarm] = useState(Farms);
   useEffect(() => {
     setLogged(JSON.parse(localStorage.getItem("isLoggedIn")));
   }, []);
@@ -57,6 +60,9 @@ function App() {
             </Route>
             <Route path="/findFarm">
               <FindFarm />
+            </Route>
+            <Route path="/bookingform/:id/:farmPrice">
+              <BookingForm farms={farms} />
             </Route>
             <Route path="*">
               <Error />
