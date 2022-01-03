@@ -19,8 +19,8 @@ function Confirmation(props) {
         </div>
         <div className="box-illustrate">
           <h6>
-            You will not be able to cancel this resrvation, nor reserve this car
-            before this reservation ends
+            You will not be able to cancel this reservation, nor reserve this
+            car before this reservation ends
           </h6>
         </div>
         <div className="box-btns">

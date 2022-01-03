@@ -77,6 +77,7 @@ function BookingForm() {
     e.preventDefault();
     let reservation = {
       id: id,
+      farmPrice: farmPrice,
       ...userInfo,
       tel: e.target.tel.value,
       start: valueCut,
@@ -95,6 +96,7 @@ function BookingForm() {
   // divide by 8640000 to convert to days
   let duration =
     (new Date(valueCut2).getTime() - new Date(valueCut).getTime()) / 86400000;
+  const Total = farmPrice * duration;
   return (
     <div>
       <div className="farm-form-container ">
@@ -162,7 +164,7 @@ function BookingForm() {
           </div>
           <div className="total">
             <p className="state">{duration} Days</p>
-            <p>Total :{duration * farmPrice} JOD</p>
+            <p>Total : {Total}JOD</p>
           </div>
           <div className="submit">
             <input type="submit" value="Book Now !" />
