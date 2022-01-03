@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import "./styles/App.css";
 import Error from "./components/error";
 import About from "./pages/About";
+import FindFarm from "./pages/FindFarm";
 export const UserContext = createContext();
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/findFarm">
+              <FindFarm />
             </Route>
             <Route path="*">
               <Error />

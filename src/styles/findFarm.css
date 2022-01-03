@@ -1,0 +1,229 @@
+.heroImageContainer {
+  min-width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://go-assets.devops.arabiaweather.com/2021-04/147097000_106195261496689_8907749296015838392_n_0.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+.actionArea {
+  background-color: rgba(0, 225, 255, 0.2);
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  padding-left: 15%;
+  font-size: 1.5em;
+  border: 2px black;
+}
+.heroImageContainer .actionArea p {
+  margin-bottom: 1rem;
+  max-width: 40%;
+}
+.heroImageContainer .actionArea h2 {
+  font-size: 1.6em;
+  padding: 7px 0;
+}
+.heroImageContainer .actionArea button {
+  background-color: #ff385c;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+  font-size: 0.9em;
+  color: white;
+  cursor: pointer;
+}
+.heroImageContainer .actionArea button:hover {
+  background-color: var(--DarkBlue);
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (max-width: 1000px) {
+  .heroImageContainer .actionArea {
+    padding-left: 0;
+    text-align: center;
+  }
+  .heroImageContainer .actionArea p {
+    max-width: 100%;
+  }
+  .heroImageContainer .actionArea p,
+  .heroImageContainer .actionArea h2,
+  .heroImageContainer .actionArea button {
+    margin: 10px 10px;
+  }
+}
+
+.Booking-Card {
+  color: var(--black);
+}
+.booking-head {
+  text-align: center;
+  background-color: #bbe9eb;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+.booking-card {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+  border-radius: 1em;
+  width: 100%;
+  margin: auto;
+  padding: 1.5em 2em;
+}
+.booking-img {
+  width: 30%;
+}
+.booking-tutor-desc {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.booking-tutor-desc p {
+  color: #6f757b;
+}
+.booking-price {
+  width: 25%;
+  text-align: center;
+}
+.booking-img img {
+  width: 70%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.booking-price > p {
+  color: #6f757b;
+}
+.booking-price button {
+  background-color: var(--teal);
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.5em 2em;
+  color: var(--white);
+  font-weight: bold;
+  width: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+  margin-bottom: 3em;
+}
+.date-time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+#date,
+#time {
+  width: 40%;
+  border: 1px solid var(--teal);
+  border-radius: 0.5em;
+  padding: 0.5em 1.5em;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5em;
+  }
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .booking-img {
+    width: 70%;
+    margin: auto;
+    max-height: 50%;
+  }
+  .booking-tutor-desc {
+    width: 100%;
+    margin: auto;
+  }
+  .booking-price {
+    width: 70%;
+    margin: auto;
+  }
+  .booking-hero {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .booking-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .booking-img {
+    width: 70%;
+    margin: auto;
+    max-height: 50%;
+  }
+  .booking-tutor-desc {
+    width: 100%;
+  }
+  .booking-price {
+    width: 100%;
+  }
+  #date {
+    width: 100%;
+  }
+  #time {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .booking-card {
+    display: flex;
+    text-align: center;
+  }
+  .booking-img {
+    width: 100%;
+    margin: auto;
+    max-height: 50%;
+  }
+  .booking-tutor-desc {
+    width: 100%;
+    font-size: 1em;
+  }
+  .booking-price {
+    width: 100%;
+    font-size: 1em;
+  }
+  .booking-price h3 {
+    font-size: 1em;
+  }
+  .booking-price button {
+    font-size: 0.75em;
+    width: 80%;
+  }
+  .booking-tutor-desc p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .booking-card {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    border-radius: 1em;
+    width: 100%;
+    margin: auto;
+    padding: 1.5em 2em;
+  }
+}
