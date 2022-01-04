@@ -9,29 +9,30 @@ function Cart() {
     let filteredData = data.filter((e) => e.email == user.email);
     setData(filteredData);
   }, []);
-  console.log({ data });
   return data?.length ? (
-    <section className="cart-container">
-      <table className="reservationLeft">
-        <thead className="reservationTable">
-          <th>Name</th>
-          <th>Booking Date</th>
-          <th>Booking Time</th>
-          <th>Total Price</th>
-          <th></th>
-        </thead>
-        <tbody>
-          {data.map((reservations) => (
-            <tr className="reservationTable2">
-              <td>{reservations.email}</td>
-              <td>{reservations.start}</td>
-              <td>{reservations.end}</td>
-              <td>{reservations.farmPrice}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </section>
+    <div className="cart-container">
+      <section>
+        <table className="reservationLeft">
+          <thead className="reservationTable">
+            <th>Name</th>
+            <th>Booking Date</th>
+            <th>Booking Time</th>
+            <th>Total Price</th>
+            <th></th>
+          </thead>
+          <tbody>
+            {data.map((reservations) => (
+              <tr className="reservationTable2">
+                <td>{reservations.email}</td>
+                <td>{reservations.start}</td>
+                <td>{reservations.end}</td>
+                <td>{reservations.farmPrice}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    </div>
   ) : (
     <div className="reservationBack">
       <h5>You didn't pick any lesson</h5>
