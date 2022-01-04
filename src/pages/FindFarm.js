@@ -5,6 +5,8 @@ import FarmCardInfo from "../components/FarmCardInfo";
 export const BookingContext = createContext();
 
 function FindFarm() {
+  if (!localStorage.getItem("reservations"))
+    localStorage.setItem("reservations", JSON.stringify([]));
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

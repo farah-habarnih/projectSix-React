@@ -46,7 +46,12 @@ function NavBar({ isLoggedIn }) {
         ) : (
           <ul>
             <li>
-              <Link to="/Account">My Account</Link>
+              <Link to="/account">My Account</Link>
+            </li>
+            <li>
+              <Link to="/cart">
+                <i className="fas fa-shopping-cart fa-lg"></i>
+              </Link>
             </li>
           </ul>
         )}

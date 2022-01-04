@@ -11,6 +11,8 @@ import About from "./pages/About";
 import FindFarm from "./pages/FindFarm";
 import Farms from "./components/Farms";
 import BookingForm from "./pages/BookingForm";
+import Cart from "./pages/Cart";
+import Account from "./pages/Account";
 export const UserContext = createContext();
 
 function App() {
@@ -63,6 +65,12 @@ function App() {
             </Route>
             <Route path="/bookingform/:id/:farmPrice">
               <BookingForm farms={farms} />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/account">
+              <Account />
             </Route>
             <Route path="*">
               <Error />

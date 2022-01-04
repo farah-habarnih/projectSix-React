@@ -4,7 +4,7 @@ import "../styles/BookingForm.css";
 import Farms from "../components/Farms";
 import Confirmation from "../components/Confirmation";
 
-function BookingForm() {
+function BookingForm({ farms }) {
   let [userInfo, setUserInfo] = useState(
     JSON.parse(localStorage.getItem("loggedAccount"))
   );
@@ -21,8 +21,6 @@ function BookingForm() {
 
     setUserInfo({ ...userInfo, [id]: value });
   };
-
-  // To get the price per day from the cars object using Id from params//
 
   //****************** Start Date*******************//
   //Min and default//

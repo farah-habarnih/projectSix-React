@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../App";
 import "../styles/login.css";
 import { useHistory } from "react-router-dom";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 
 function Login(props) {
   const history = useHistory();
@@ -52,11 +52,11 @@ function Login(props) {
       );
       history.push("/findFarm");
     } else {
-      //   Swal.fire({
-      //     icon: "error",
-      //     title: "Oops...",
-      //     text: "Email or Password is incorrect",
-      //   });
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Email or Password is incorrect",
+      });
     }
   };
   return (
