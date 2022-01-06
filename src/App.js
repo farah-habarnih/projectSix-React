@@ -63,7 +63,7 @@ function App() {
             <Route path="/findFarm">
               <FindFarm />
             </Route>
-            <Route path="/bookingform/:id/:farmPrice">
+            <Route path="/bookingform/:id/:farmPrice/:farmName">
               <BookingForm farms={farms} />
             </Route>
             <Route path="/cart">

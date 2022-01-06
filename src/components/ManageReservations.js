@@ -14,15 +14,15 @@ function ManageReservations() {
       <table className="reservationLeft">
         <thead className="reservationTable">
           <th>Name</th>
-          <th>Booking Date</th>
-          <th>Booking Time</th>
+          <th>Start Date</th>
+          <th>End Time</th>
           <th>Total Price</th>
           <th></th>
         </thead>
         <tbody>
           {data.map((reservations) => (
             <tr className="reservationTable2">
-              <td>{reservations.email}</td>
+              <td>{reservations.farmName}</td>
               <td>{reservations.start}</td>
               <td>{reservations.end}</td>
               <td>{reservations.farmPrice}</td>
@@ -33,9 +33,9 @@ function ManageReservations() {
     </>
   ) : (
     <div className="reservationBack">
-      <h5>You didn't pick any lesson</h5>
-      <Link to="/">
-        <button className="backBtn">Back to reserve</button>
+      <h5>You didn't pick any farm</h5>
+      <Link to="/findFarm">
+        <button className="backBtn">Back to booking</button>
       </Link>
     </div>
   );

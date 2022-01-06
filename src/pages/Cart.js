@@ -1,8 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import "../styles/cart.css";
 function Cart() {
   const [data, setData] = useState([]);
+  let history = useHistory();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    let isLoggedIn = JSON.parse(localStorage.getItem("isLoggedIn"));
+    if (!isLoggedIn) {
+      history.push("/login");
+    }
+  }, []);
   useEffect(() => {
     let data = JSON.parse(localStorage.getItem("reservations"));
     let user = JSON.parse(localStorage.getItem("loggedAccount"));
@@ -15,15 +24,15 @@ function Cart() {
         <table className="reservation">
           <thead className="reservationTable">
             <th>Name</th>
-            <th>Booking Date</th>
-            <th>Booking Time</th>
+            <th>Start Date</th>
+            <th>End Time</th>
             <th>Total Price</th>
             <th></th>
           </thead>
           <tbody>
             {data.map((reservations) => (
               <tr className="reservationTable2">
-                <td>{reservations.email}</td>
+                <td>{reservations.farmName}</td>
                 <td>{reservations.start}</td>
                 <td>{reservations.end}</td>
                 <td>{reservations.farmPrice}</td>
@@ -34,10 +43,10 @@ function Cart() {
       </section>
     </div>
   ) : (
-    <div className="reservationBack">
-      <h5>You didn't pick any lesson</h5>
+    <div className="reservationEmpty">
+      <h3>You didn't book any farm</h3>
       <Link to="/findFarm">
-        <button className="backBtn">Back to reserve</button>
+        <button className="backBtn">Back to booking</button>
       </Link>
     </div>
   );

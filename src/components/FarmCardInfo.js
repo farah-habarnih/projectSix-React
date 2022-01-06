@@ -9,16 +9,16 @@ function FarmCardInfo() {
       farmImg:
         "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
       farmName: "Nashmi",
-      farmExp: 7,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Amman",
+      farmDes: "Three bedrooms",
       farmPrice: 50,
     },
     {
       id: 2,
       farmImg: "https://go-assets.devops.arabiaweather.com/2021-07/xc_6.jpg",
       farmName: "Al-DANA",
-      farmExp: 8,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Jarash",
+      farmDes: "Three bedrooms",
       farmPrice: 60,
     },
     {
@@ -26,8 +26,8 @@ function FarmCardInfo() {
       farmImg:
         "https://go-assets.devops.arabiaweather.com/2021-08/123456100.jpg",
       farmName: "Sun",
-      farmExp: 10,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Amman",
+      farmDes: "Two bedrooms",
       farmPrice: 50,
     },
     {
@@ -35,8 +35,8 @@ function FarmCardInfo() {
       farmImg:
         "http://go-admin.arabiaweather.com/sites/default/files/2021-07/123456220_2.jpg",
       farmName: "Evergreen",
-      farmExp: 3,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Ajloun",
+      farmDes: "One Bedroom",
       farmPrice: 30,
     },
     {
@@ -44,8 +44,8 @@ function FarmCardInfo() {
       farmImg:
         "http://go-admin.arabiaweather.com/sites/default/files/2021-04/026_2347383505350212_7707841377047937024_m.jpg",
       farmName: "Teresa",
-      farmExp: 9,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Al-Salt",
+      farmDes: "Four Bedroom",
       farmPrice: 70,
     },
     {
@@ -53,16 +53,16 @@ function FarmCardInfo() {
       farmImg:
         "http://go-admin.arabiaweather.com/sites/default/files/2021-09/10_23.jpg",
       farmName: "Nebo",
-      farmExp: 10,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Dead Sea",
+      farmDes: "Two bedrooms",
       farmPrice: 50,
     },
     {
       id: 7,
       farmImg: "https://go-assets.devops.arabiaweather.com/2021-07/xc_10.jpg",
       farmName: "Bronze",
-      farmExp: 8,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Mafraq",
+      farmDes: "Three bedrooms",
       farmPrice: 60,
     },
     {
@@ -70,8 +70,8 @@ function FarmCardInfo() {
       farmImg:
         "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
       farmName: "Royal",
-      farmExp: 7,
-      farmDes: "Hello!my hobbies are drawing ,)",
+      farmLocation: "Irbid",
+      farmDes: "Two bedrooms",
       farmPrice: 50,
     },
   ]);

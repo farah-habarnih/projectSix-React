@@ -7,16 +7,17 @@ function FarmCard(props) {
   const history = useHistory();
   const { logged } = useContext(UserContext);
   const { date, setDate } = useContext(BookingContext);
-  const { id, farmImg, farmName, farmExp, farmDes, farmPrice } = props.item;
+  const { id, farmImg, farmName, farmLocation, farmDes, farmPrice } =
+    props.item;
   return (
     <div className="Booking-Card">
       <div className="booking-card">
         <div className="booking-img">
-          <img src={farmImg} alt="female-tutor" />
+          <img src={farmImg} alt="farm-image" />
         </div>
         <div className="booking-tutor-desc">
           <h4>{farmName}</h4>
-          <p>{farmExp} years of experience</p>
+          <p>{farmLocation} </p>
           <p>{farmDes}</p>
         </div>
 
@@ -27,7 +28,7 @@ function FarmCard(props) {
             className="btn-book"
             onClick={() => {
               if (logged) {
-                history.push(`/bookingform/${id}/${farmPrice}`);
+                history.push(`/bookingform/${id}/${farmPrice}/${farmName}`);
               } else {
                 history.push("/login");
               }

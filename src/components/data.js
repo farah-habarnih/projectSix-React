@@ -6,7 +6,7 @@ const people = [
     name: "maria ferguson",
     title: "office manager",
     quote:
-      "Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.",
+      "Thank You! I can't say enough about website. Great job, I will definitely be ordering again!",
   },
   {
     id: 2,
@@ -14,8 +14,7 @@ const people = [
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
     name: "john doe",
     title: "regular guy",
-    quote:
-      "Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.",
+    quote: "I would like to personally thank you for your outstanding product.",
   },
   {
     id: 3,
@@ -23,8 +22,7 @@ const people = [
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959121/person-1_aufeoq.jpg",
     name: "peter smith",
     title: "product designer",
-    quote:
-      "Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.",
+    quote: "It's exactly what I've been looking for. It's all good. ",
   },
   {
     id: 4,
@@ -32,8 +30,7 @@ const people = [
       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
     name: "susan andersen",
     title: "the boss",
-    quote:
-      "Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag. ",
+    quote: "Bookinga has got everything I need. We were treated like royalty. ",
   },
 ];
 

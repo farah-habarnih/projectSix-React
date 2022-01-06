@@ -11,7 +11,7 @@ function BookingForm({ farms }) {
 
   if (!localStorage.getItem("reservations"))
     localStorage.setItem("reservations", JSON.stringify([]));
-  let { farmPrice, id } = useParams();
+  let { farmPrice, id, farmName } = useParams();
   const [submitted, setSubmitted] = useState(false);
 
   //State to pass reservation object to PopUp component
@@ -21,7 +21,7 @@ function BookingForm({ farms }) {
 
     setUserInfo({ ...userInfo, [id]: value });
   };
-
+  console.log({ farmName });
   //****************** Start Date*******************//
   //Min and default//
   let lcl = JSON.parse(localStorage.getItem("reservations"));
@@ -81,6 +81,7 @@ function BookingForm({ farms }) {
       start: valueCut,
       end: valueCut2,
       hour: e.target.hours.value,
+      farmName: farmName,
     };
 
     // To show the POPUP message after clicking submit
@@ -88,7 +89,7 @@ function BookingForm({ farms }) {
     // To carry the reservation object as a prop to the POPUP component
     setTest(reservation);
   };
-
+  console.log({ test });
   // convert the value selected by the user to a new date object then .getTime() calculates how many ms from 01-01-1970
   // Subtract the two ms value from each other
   // divide by 8640000 to convert to days

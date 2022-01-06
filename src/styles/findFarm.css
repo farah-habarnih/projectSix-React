@@ -81,7 +81,14 @@
   padding: 1.5em 2em;
 }
 .booking-img {
+  transition: transform 1s;
   width: 30%;
+}
+.booking-img:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(2.2);
+  cursor: pointer;
 }
 .booking-tutor-desc {
   width: 30%;
