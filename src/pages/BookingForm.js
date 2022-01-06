@@ -77,7 +77,6 @@ function BookingForm({ farms }) {
       id: id,
       farmPrice: farmPrice,
       ...userInfo,
-      tel: e.target.tel.value,
       start: valueCut,
       end: valueCut2,
       hour: e.target.hours.value,
@@ -89,7 +88,7 @@ function BookingForm({ farms }) {
     // To carry the reservation object as a prop to the POPUP component
     setTest(reservation);
   };
-  console.log({ test });
+
   // convert the value selected by the user to a new date object then .getTime() calculates how many ms from 01-01-1970
   // Subtract the two ms value from each other
   // divide by 8640000 to convert to days
@@ -112,7 +111,7 @@ function BookingForm({ farms }) {
                 name="fName"
                 id="fName"
               />
-              <input
+              {/* <input
                 onChange={(e) => handleInputChange(e)}
                 value={userInfo.lName}
                 required
@@ -120,7 +119,7 @@ function BookingForm({ farms }) {
                 type="text"
                 name="lName"
                 id="lName"
-              />
+              /> */}
             </div>
             <div className="texts" id="texts2">
               <input
@@ -134,14 +133,14 @@ function BookingForm({ farms }) {
                 name="email"
                 id="email"
               />
-              <input
+              {/* <input
                 type="tel"
                 pattern="[0-9]{10}"
                 required
                 placeholder="Mobile Number"
                 name="tel"
                 id="tel"
-              />
+              /> */}
             </div>
           </div>
           <div className="dates">
@@ -160,13 +159,27 @@ function BookingForm({ farms }) {
               name="end"
             />
             <input required type="time" name="hours" />
+            <input
+              type="text"
+              className="table-input"
+              placeholder="Insert coupon"
+              id="coupon"
+            />
           </div>
           <div className="total">
             <p className="state">{duration} Days</p>
             <p>Total : {Total}JOD</p>
+            <p>
+              Total after discount :{Math.round(Total * (1 - 0.2) * 100) / 100}
+            </p>
           </div>
-          <div className="submit">
-            <input type="submit" value="Book Now !" />
+          <div className="Btns">
+            <div className="submit">
+              <input type="submit" value="Book Now" />
+            </div>
+            {/* <div className="submit">
+              <input type="submit" value="Apply Coupon" />
+            </div> */}
           </div>
         </form>
         {found && (

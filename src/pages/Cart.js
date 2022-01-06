@@ -18,10 +18,14 @@ function Cart() {
     let filteredData = data.filter((e) => e.email == user.email);
     setData(filteredData);
   }, []);
+
+  // function emptyCart() {
+  //   setData();
+  // }
   return data?.length ? (
     <div className="cart-container">
       <section>
-        <table className="reservation">
+        <table className="reservationall">
           <thead className="reservationTable">
             <th>Name</th>
             <th>Start Date</th>
@@ -41,6 +45,12 @@ function Cart() {
           </tbody>
         </table>
       </section>
+      <div className="cartBtn1">
+        <button className="emptyCart">Empty Cart</button>
+        <Link to="/">
+          <button className="logOut">Back to Home</button>
+        </Link>
+      </div>
     </div>
   ) : (
     <div className="reservationEmpty">
