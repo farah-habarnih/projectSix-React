@@ -1,11 +1,11 @@
-.heroImageContainer {
+.heroImageContainer1 {
   min-width: 100%;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://go-assets.devops.arabiaweather.com/2021-04/147097000_106195261496689_8907749296015838392_n_0.jpg");
+  background-image: url("http://go-admin.arabiaweather.com/sites/default/files/2021-07/123456205.jpg");
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 2rem;
@@ -23,15 +23,15 @@
   font-size: 1.5em;
   border: 2px black;
 }
-.heroImageContainer .actionArea p {
+.heroImageContainer1 .actionArea p {
   margin-bottom: 1rem;
   max-width: 40%;
 }
-.heroImageContainer .actionArea h2 {
+.heroImageContainer1 .actionArea h2 {
   font-size: 1.6em;
   padding: 7px 0;
 }
-.heroImageContainer .actionArea button {
+.heroImageContainer1 .actionArea button {
   background-color: #ff385c;
   padding: 0.7rem;
   border-radius: 5px;
@@ -41,23 +41,23 @@
   color: white;
   cursor: pointer;
 }
-.heroImageContainer .actionArea button:hover {
+.heroImageContainer1 .actionArea button:hover {
   background-color: var(--DarkBlue);
   padding: 0.7rem;
   border-radius: 5px;
   border: none;
 }
 @media screen and (max-width: 1000px) {
-  .heroImageContainer .actionArea {
+  .heroImageContainer1 .actionArea {
     padding-left: 0;
     text-align: center;
   }
-  .heroImageContainer .actionArea p {
+  .heroImageContainer1 .actionArea p {
     max-width: 100%;
   }
-  .heroImageContainer .actionArea p,
-  .heroImageContainer .actionArea h2,
-  .heroImageContainer .actionArea button {
+  .heroImageContainer1 .actionArea p,
+  .heroImageContainer1 .actionArea h2,
+  .heroImageContainer1 .actionArea button {
     margin: 10px 10px;
   }
 }

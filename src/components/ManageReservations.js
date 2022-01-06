@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../styles/cart.css";
+import "../styles/manageReservations.css";
 function ManageReservations() {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -10,7 +10,7 @@ function ManageReservations() {
     setData(filteredData);
   }, []);
   return data?.length ? (
-    <section className="cart-container">
+    <>
       <table className="reservationLeft">
         <thead className="reservationTable">
           <th>Name</th>
@@ -30,7 +30,7 @@ function ManageReservations() {
           ))}
         </tbody>
       </table>
-    </section>
+    </>
   ) : (
     <div className="reservationBack">
       <h5>You didn't pick any lesson</h5>

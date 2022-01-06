@@ -11,7 +11,7 @@ function BookingForm({ farms }) {
 
   if (!localStorage.getItem("reservations"))
     localStorage.setItem("reservations", JSON.stringify([]));
-  let { id, farmPrice } = useParams();
+  let { farmPrice, id } = useParams();
   const [submitted, setSubmitted] = useState(false);
 
   //State to pass reservation object to PopUp component

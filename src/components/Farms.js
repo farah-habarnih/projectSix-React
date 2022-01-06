@@ -3,7 +3,7 @@ const Farms = [
     id: 1,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Jane",
+    farmName: "Nashmi",
     farmExp: 7,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 50,
@@ -12,7 +12,7 @@ const Farms = [
     id: 2,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Ghassan",
+    farmName: "Al-DANA",
     farmExp: 8,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 60,
@@ -21,7 +21,7 @@ const Farms = [
     id: 3,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Khadeejah",
+    farmName: "Sun",
     farmExp: 10,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 50,
@@ -30,7 +30,7 @@ const Farms = [
     id: 4,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Sara",
+    farmName: "Evergreen",
     farmExp: 3,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 30,
@@ -39,7 +39,7 @@ const Farms = [
     id: 5,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Margret",
+    farmName: "Teresa",
     farmExp: 9,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 70,
@@ -48,7 +48,7 @@ const Farms = [
     id: 6,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Victoria",
+    farmName: "Nebo",
     farmExp: 10,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 50,
@@ -57,7 +57,7 @@ const Farms = [
     id: 7,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Brad",
+    farmName: "Bronze",
     farmExp: 8,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 60,
@@ -66,7 +66,7 @@ const Farms = [
     id: 8,
     farmImg:
       "https://jostorage.yalla.deals/products/YD_aldwikat-IDDKT6068_11603647379.jpg",
-    farmName: "Fatima",
+    farmName: "Royal",
     farmExp: 7,
     farmDes: "Hello!my hobbies are drawing ,)",
     farmPrice: 50,

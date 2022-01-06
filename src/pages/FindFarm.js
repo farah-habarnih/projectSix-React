@@ -14,7 +14,7 @@ function FindFarm() {
 
   return (
     <div>
-      <div className="heroImageContainer">
+      <div className="heroImageContainer1">
         <div className="actionArea">
           <h2>Explore the most beautiful farms</h2>
           <p>

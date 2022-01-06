@@ -12,7 +12,7 @@ function Cart() {
   return data?.length ? (
     <div className="cart-container">
       <section>
-        <table className="reservationLeft">
+        <table className="reservation">
           <thead className="reservationTable">
             <th>Name</th>
             <th>Booking Date</th>
@@ -36,7 +36,7 @@ function Cart() {
   ) : (
     <div className="reservationBack">
       <h5>You didn't pick any lesson</h5>
-      <Link to="/">
+      <Link to="/findFarm">
         <button className="backBtn">Back to reserve</button>
       </Link>
     </div>
