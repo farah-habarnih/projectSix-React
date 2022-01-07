@@ -1,4 +1,4 @@
-.farm-form-container {
+.farm-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,27 +7,17 @@
   width: fit-content;
   position: relative;
   padding: 2em;
-  background-color: white;
-  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.4);
+  background-color: var(--white);
   text-align: center;
+  border: 0.5px solid rgba(128, 128, 128, 0.623);
+  border-radius: 7px;
 }
-.farm-form-container form {
+.farm-form form {
   display: flex;
   flex-direction: column;
 }
-.farm-form-container input[type="text"],
-.farm-form-container input[type="email"],
-.farm-form-container input[type="tel"],
-.farm-form-container input[type="date"],
-.farm-form-container input[type="time"] {
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 10px;
-  width: 100%;
-}
-.farm-form-container input[type="submit"] {
+
+.farm-form input[type="submit"] {
   background-color: #ff385c;
   padding: 0.7rem;
   border-radius: 5px;
@@ -37,23 +27,48 @@
   color: white;
   cursor: pointer;
 }
-.farm-form-container input[type="submit"]:hover {
+.farm-form input[type="submit"]:hover {
   background-color: var(--DarkBlue);
   padding: 0.7rem;
   border-radius: 5px;
   border: none;
 }
-.farm-form-container .texts {
+.farm-form .texts {
   display: flex;
   justify-content: space-around;
-}
-.register-label {
-  padding-top: 2em;
-  font-size: 1.2em !important;
-  color: brown;
 }
 
 .Btns {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.total {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.dates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+
+.dates-label {
+  display: block;
+}
+
+.farm-form input[type="text"],
+.farm-form input[type="email"],
+.farm-form input[type="tel"],
+.farm-form input[type="date"],
+.farm-form input[type="time"] {
+  border: 2px solid rgba(128, 128, 128, 0.623);
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+  width: 90%;
 }

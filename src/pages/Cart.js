@@ -19,9 +19,10 @@ function Cart() {
     setData(filteredData);
   }, []);
 
-  // function emptyCart() {
-  //   setData();
-  // }
+  function emptyCart() {
+    setData([]);
+    localStorage.setItem("reservations", JSON.stringify([]));
+  }
   return data?.length ? (
     <div className="cart-container">
       <section>
@@ -39,14 +40,16 @@ function Cart() {
                 <td>{reservations.farmName}</td>
                 <td>{reservations.start}</td>
                 <td>{reservations.end}</td>
-                <td>{reservations.farmPrice}</td>
+                <td>{reservations.total}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </section>
       <div className="cartBtn1">
-        <button className="emptyCart">Empty Cart</button>
+        <button className="emptyCart" onClick={emptyCart}>
+          Empty Cart
+        </button>
         <Link to="/">
           <button className="logOut">Back to Home</button>
         </Link>

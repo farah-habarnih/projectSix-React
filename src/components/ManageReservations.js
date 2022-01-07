@@ -25,7 +25,7 @@ function ManageReservations() {
               <td>{reservations.farmName}</td>
               <td>{reservations.start}</td>
               <td>{reservations.end}</td>
-              <td>{reservations.farmPrice}</td>
+              <td>{reservations.total}</td>
             </tr>
           ))}
         </tbody>
