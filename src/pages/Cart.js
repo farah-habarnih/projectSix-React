@@ -40,7 +40,7 @@ function Cart() {
                 <td>{reservations.farmName}</td>
                 <td>{reservations.start}</td>
                 <td>{reservations.end}</td>
-                <td>{reservations.total}</td>
+                <td>{reservations.priceAfter}</td>
               </tr>
             ))}
           </tbody>

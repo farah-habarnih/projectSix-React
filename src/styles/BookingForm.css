@@ -72,3 +72,20 @@
   padding: 10px;
   width: 90%;
 }
+
+.apply-discount {
+  background-color: var(--DarkBlue);
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  transition: 0.3s ease;
+  font-size: 0.9em;
+  color: white;
+  cursor: pointer;
+}
+.apply-discount:hover {
+  background-color: #ff385c;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+}

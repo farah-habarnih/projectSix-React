@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import "../styles/BookingForm.css";
+import Swal from "sweetalert2";
 
 function BookingForm() {
   const history = useHistory();
   let [userInfo] = useState(JSON.parse(localStorage.getItem("loggedAccount")));
-
+  const [discount, setDiscount] = useState(0.2);
+  const [coupon] = useState("farm62");
+  const [applyDiscount, setApplyDiscount] = useState(false);
+  // const [priceAfter, setPriceAfter] = useState(0);
   if (!localStorage.getItem("reservations"))
     localStorage.setItem("reservations", JSON.stringify([]));
   let { farmPrice, id, farmName } = useParams();
@@ -48,6 +52,7 @@ function BookingForm() {
       hour: e.target.hours.value,
       farmName: farmName,
       total: Total,
+      priceAfter: priceAfter,
     };
 
     lastReservation.push(reservation);
@@ -58,6 +63,7 @@ function BookingForm() {
   let duration =
     (new Date(valueCut2).getTime() - new Date(valueCut).getTime()) / 86400000;
   const Total = farmPrice * duration;
+  const priceAfter = Math.round(Total * (1 - discount) * 100) / 100;
   return (
     <div>
       <div className="farm-form">
@@ -88,27 +94,50 @@ function BookingForm() {
               Arrive Time
               <input required type="time" name="hours" />
             </label>
-            {/* <input
-              type="text"
-              className="table-input"
-              placeholder="Insert coupon"
-              id="coupon"
-            /> */}
+            <label className="dates-label">
+              Insert Coupon code
+              <input
+                type="text"
+                className="dates-label"
+                placeholder="Insert coupon"
+                id="coupon"
+              />
+            </label>
           </div>
           <div className="total">
             <p className="state">Booking period: {duration} Days</p>
             <p>Total Price : {Total}JOD</p>
-            {/* <p>
-              Total after discount :{Math.round(Total * (1 - 0.2) * 100) / 100}
-            </p> */}
+            {applyDiscount ? <p>Total after discount :{priceAfter}</p> : ""}
           </div>
           <div className="Btns">
             <div className="submit">
               <input type="submit" value="Book Now" />
             </div>
-            {/* <div className="submit">
-              <input type="submit" value="Apply Coupon" />
-            </div> */}
+            <div className="submit">
+              <button
+                className="apply-discount"
+                onClick={function (e) {
+                  e.preventDefault();
+                  if (document.getElementById("coupon").value == coupon) {
+                    setDiscount(0.2);
+                    setApplyDiscount(true);
+                    Swal.fire({
+                      icon: "success",
+                      title: "Congrats",
+                      text: "Discount Applied",
+                    });
+                  } else {
+                    Swal.fire({
+                      icon: "error",
+                      title: "Oops...",
+                      text: "No such coupon code found",
+                    });
+                  }
+                }}
+              >
+                Apply Discount
+              </button>
+            </div>
           </div>
         </form>
       </div>
